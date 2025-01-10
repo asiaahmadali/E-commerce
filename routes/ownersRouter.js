@@ -6,7 +6,7 @@ router.get('/',(req,res)=>{
     res.send('owner route') ;
 })
 
-// development mode
+
 
 if(process.env === 'development'){
     console.log('hey')
