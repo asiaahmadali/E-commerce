@@ -12,6 +12,8 @@ if(process.env === 'development'){
     console.log('hey')
 }
 
+// post route
+
 router.post('/create',(req,res)=>{
     res.send('its working')
 })
