@@ -7,9 +7,8 @@ router.get('/',(req,res)=>{
 })
 
 
-
 if(process.env === 'development'){
-    console.log('hey')
+    console.log('hey') ;
 }
 
 // post route
