@@ -7,10 +7,11 @@ router.get('/',(req,res)=>{
 })
 
 
-if(process.env === 'development'){
-    console.log('hey') ;
-}
-
+if(process.env.NODE_ENV === 'development'){
+    router.post('/create',(req,res)=>{
+        res.send('create route working') ;
+    })
+} 
 // post route
 
 router.post('/create',(req,res)=>{
