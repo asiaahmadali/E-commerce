@@ -3,11 +3,11 @@ const router = express.Router() ;
 const ownerModel = require('../models/owner.model');
 
 
-// create route only for development
+// create route only for development mode 
 if(process.env.NODE_ENV === 'development'){
     router.post('/create',async (req,res)=>{
         const owners = await ownerModel.find();
-        // only one owner
+        // only one owner 
         if(owners.length > 0) return res.status(503).send('no permission for new owner') ;
 
         const {fullname, email, password} = req.body ;
