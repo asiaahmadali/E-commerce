@@ -3,7 +3,7 @@ const router = express.Router() ;
 const ownerModel = require('../models/owner.model');
 
 
-// create route only for development mode 
+// create route only for development mode (prevent production)
 if(process.env.NODE_ENV === 'development'){
     router.post('/create',async (req,res)=>{
         const owners = await ownerModel.find();
