@@ -21,7 +21,7 @@ if(process.env.NODE_ENV === 'development'){
     })
 } 
 
-//  default route
+//  default user route
 router.get('/',(req,res)=>{
     res.send('owner route') ;
 })
