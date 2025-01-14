@@ -21,13 +21,13 @@ if(process.env.NODE_ENV === 'development'){
     })
 } 
 
-//  default user route
+//  default route
 router.get('/',(req,res)=>{
     res.send('owner route') ;
 })
 
 
-// post route
+// post route create
 
 router.post('/create',(req,res)=>{
     res.send('its working')
